@@ -10,9 +10,7 @@ type GetType = {
   title: string
   body: string
 }
-
 function App() {
-
   const [get, setGet] = useState([])
 // очищает то, что отрисовывается при загрузке страницы
   const CleanRequestHandler = () => {
@@ -24,6 +22,7 @@ function App() {
       .then(response => response.json())
       .then(json => setGet(json))
   }, [])
+  
   return (
     <div className="App">
       <Button nickName={'CleanPage'} callBack={CleanRequestHandler} />
