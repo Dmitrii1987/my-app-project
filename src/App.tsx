@@ -14,7 +14,7 @@ type GetType = {
 function App() {
 
   const [get, setGet] = useState([])
-
+// очищает то, что отрисовывается при загрузке страницы
   const CleanRequestHandler = () => {
     setGet([])
   }
