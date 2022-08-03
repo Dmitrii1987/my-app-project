@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
-
-
 type GetType = {
   userId: number
   id: number
